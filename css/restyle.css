@@ -3,36 +3,64 @@
 @media (max-width:768px) {
   /* 1.상단 팝업 */
   div#popup1 {
-    width: 768px;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
   }
   div#popup1 div:nth-child(1) {
-    margin: 0 70px;
+    font-size: 14px;
+    margin: 0 5vw;
+    min-width: 260px;
+    line-height: 40px;
+  }
+  div#popup1 div:nth-child(2) {
+    font-size: 11px; 
+    line-height: 40px;
+  }
+  div#popup1 div:nth-child(2) span {
+    font-size: 11px;
+    padding: 0 1px;
   }
   /* 1.상단 팝업 */
 
   /* 2.상단 GNB */
   header {
-    width: 768px;
+    width: auto;
     display: flex;
     /* justify-content:space-between; */
     background-color: aquamarine;
+    align-items: flex-start;
   }
+  div.logo {
+    margin-left: 1vw;
+    margin-top: 25px;
+  }
+  div.logo img {
+    width: 40px;
+    margin-left: 1vw;
+  }
+
   .top-menu {
     margin-left: 1vw;
   }
   .top-menu>ul>li {
     margin: 0 1vw;
   }
-  div.top-item {
-    width: 120px;
-    margin: 15px 1vw;
+  .top-menu a{
+    font-size: 13px;
   }
   div.top-menu>ul {
     display: flex;
   }
+
+  div.top-item {
+    display: none;
+  }
+
   div.icon {
     margin: 15px 1vw;
-    display: flex;  
+
+    display: none;  
   }
   div.icon a:nth-child(1) {
     margin-right: 2vw;
@@ -47,13 +75,14 @@
   
   /* 3.상단 슬라이더 */
   swiper-container {
-    width: 568px;
+    width: auto;
   }
   /* 3.상단 슬라이더 */
 
   /* 4.상단 아이콘 */
   .bigicon {
-    width: 768px;
+    width: auto;
+    display: none;
   }
   .bigicon div {
     display: flex;
@@ -67,6 +96,11 @@
     justify-content:space-around;
     margin: 0 2vw;
   }
+  .bigicon>div:nth-child(2) a {
+    min-width: 30px;
+    font-size: 13px;
+  }
+
   .bigicon>div>a {
     margin: 0 1vw;
   }
@@ -89,7 +123,8 @@
 
   /* 5.상단 이미지 */
   #topmainimg {
-    width: 768px;
+    display: none;
+    /* width: 0; */
   }
 
   #topimage div {
@@ -111,11 +146,12 @@
 
   /* 6.중단 이미지 */
   #downimage {
-    width: 768px;
+    display: none;
+    /* width: 0; */
   }
 
   #downimg22 {
-    width: 768px;
+    /* width: 0; */
   }
 
   .downimage2 ul {
@@ -138,7 +174,8 @@
 
   /* 7.하단 아이콘 */
   #downicon {
-    width: 768px;
+    display: none;
+    /* width: 0; */
     background-color: aqua;
   }
   .downtext {
@@ -148,16 +185,17 @@
 
   /* 8.footer */
   #footer {
-    width: 768px;
+    display: none;
+    /* width: 0; */
   }
   .footer1 {
-    width: 768px;
+    /* width: 0; */
     justify-content: center;
     margin-left: 5px;
   }
 
   .footer2 {
-    width: 768px;
+    /* width: 0; */
     margin-left: 5px;
   }
 
