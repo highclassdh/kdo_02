@@ -2,7 +2,7 @@
 
 @media (max-width:768px) {
   body { margin: 0 8px; }
-
+  /* 전체width 358px 기준 */
   /* 1.상단 팝업 */
   div#popup1 {
     display: flex;
@@ -16,13 +16,14 @@
     line-height: 40px;
   }
   div#popup1 div:nth-child(2) {
-    font-size: 11px; 
+    font-size: 16px; 
     line-height: 40px;
     margin-right: 3vw;
   }
   div#popup1 div:nth-child(2) span {
-    font-size: 14px;
+    font-size: 17px;
     padding: 0 1px;
+    font-weight: bold;
   }
   div#popup1 #span1 {
     display: none;
@@ -33,7 +34,7 @@
   header {
     width: auto;
     background-color: #ffffffc7;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: center;
   }
@@ -48,6 +49,7 @@
   }
   .top-menu>ul>li {
     margin: 0 1vw;
+    padding: 6px 0;
   }
   .top-menu a{
     font-size: 13px;
@@ -55,12 +57,23 @@
   div.top-menu>ul {
     display: flex;
     justify-content: space-between;
-    /* background-color: bisque; */
   }
   .top-menu>ul>li>a {
     margin-bottom: 1vw;
   }
 
+  .top-menu ul ul {
+    left: -25px;
+  }
+  .top-menu ul li:nth-child(2) ul {
+    left: -5px;
+  }
+  .top-menu ul li:nth-child(5) ul {
+    left: -45px;
+  }
+  .top-menu ul ul>li {
+    padding: 0 20px;
+  }
   div.top-item {
     display: none;
   }
@@ -71,7 +84,7 @@
   
   /* 3.상단 슬라이더 */
   swiper-container {
-    height: 100px;
+    height: 120px;
     width: auto;
     margin: 0 2px;
   }
@@ -82,15 +95,18 @@
     width: auto;
   }
   .bigicon img {
-    width: 40px;
+    width: 60px;
   }
 
   .bigicon>div:nth-child(1) {
-    height: 60px;
+    height: 80px;
   }
   .bigicon>div>ul>li {
     margin-top: 20px;
     padding: 0 0.1vw ;
+  }
+  .bigicon ul:nth-child(6) {
+    display: none;
   }
   .bigicon ul:nth-child(7) {
     display: none;
@@ -107,23 +123,26 @@
   }
   .bigicon>div:nth-child(2) a {
     min-width: 30px;
-    font-size: 8.5px;
+    font-size: 12px;
   }
 
   .bigicon>div>a {
     margin: 0 1vw;
   }
   .bigicon>div>a:nth-child(1) {
-    margin-left: 0.1vw;
+    margin-left: 0.5vw;
   }
   .bigicon>div>a:nth-child(2) {
-    margin-left: 2vw;
+    margin-left: 3vw;
   }
   .bigicon>div>a:nth-child(3) {
     margin: 0 0.1vw;
   }
   .bigicon>div>a:nth-child(4) {
     margin-left: 0.5vw;
+  }
+  .bigicon>div>a:nth-child(6) {
+    display: none;
   }
   .bigicon>div>a:nth-child(7) {
     display: none;
@@ -181,9 +200,13 @@
     display: flex;
   }
 
+  .spanflex2 {
+    display: flex;
+  }
+
   #topimage ul ul span {
     width: 160px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   #topimage div {
@@ -205,14 +228,14 @@
     display: none;
   }
   #topimage ul ul span:nth-child(2) {
-    margin: 0 1vw;
+    margin: 0 2vw;
   }
   /* 5.상단 이미지 */
 
   /* 6.중단 이미지 */
   #downimage {
     margin: 0 auto;
-    height: 460px;
+    height: 390px;
   }
 
   #downimg22 {
@@ -229,8 +252,8 @@
 
   .downimage2 ul {
     width: 28vw;
-    height: 120px;
-    padding: 30px;
+    height: 100px;
+    padding: 20px 30px;
     margin: 4px 4px;
     border-radius: 10px;
   }
@@ -238,10 +261,11 @@
   .downimage2 ul img {
     right: 15%;
     bottom: 10px;
+    width: 60px;
   }
 
   .downimage2 ul li:nth-child(1) {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 25px;
     margin-bottom: 5px;
     min-width: 20px;
@@ -268,6 +292,7 @@
 
   .downicon22 {
     display: flex;
+    margin-left: 20px;
   }
 
   .downicon22 img {
@@ -278,7 +303,7 @@
   /* 8.footer */
   #footer {
     margin: 0.1px 0;
-    height: 350px;
+    height: 325px;
     font-size: 13px;
     color: #999999;
     border-top: 1px solid #dfdfdf;
@@ -299,6 +324,9 @@
   .footer2 {
     width: auto;
     margin-left: 5px;
+  }
+  .footer2 ul {
+    font-size: 11px;;
   }
   .footer2 ul:nth-child(1) {
     flex-direction: column;
