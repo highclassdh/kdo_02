@@ -313,7 +313,7 @@ div.topline {
   transform: scale(1.1);
 }
 
-#topimage div {
+#topimage div  {
   width: 350px;
   height: 250px;
   overflow: hidden;
@@ -322,7 +322,6 @@ div.topline {
 
 #topimage div {
   margin: 10px 8px;
-
   overflow: hidden;
   float: left;
 }
@@ -365,6 +364,10 @@ div.topline {
   display: flex;
   justify-content: center;
 }
+.downimage2 nav {
+  display: flex;
+  justify-content: center;
+}
 
 .downimage2 ul {
   width: 180px;
@@ -377,16 +380,16 @@ div.topline {
   position: relative;
 }
 
-.downimage2 ul:nth-child(1) {
+.downimage2 nav:nth-child(1) ul:nth-child(1) {
   background-color: #579DFF;
 }
-.downimage2 ul:nth-child(2) {
+.downimage2 nav:nth-child(1) ul:nth-child(2) {
   background-color: #37BBAB;
 }
-.downimage2 ul:nth-child(3) {
+.downimage2 nav:nth-child(2) ul:nth-child(1) {
   background-color: #A993F8;
 }
-.downimage2 ul:nth-child(4) {
+.downimage2 nav:nth-child(2) ul:nth-child(2) {
   background-color: #6E8CF8;
 }
 
@@ -476,11 +479,6 @@ div.topline {
   border-top: 1px solid #dfdfdf;
   padding-top: 30px;
 }
-
-/* #footer22 {
-  width: 1100px;
-  margin: 0 auto;
-} */
 
 .footer1 {
   width: 1100px;

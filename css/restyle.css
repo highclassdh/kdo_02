@@ -1,6 +1,8 @@
 /* ------------------------------ 모바일웹 ------------------------------------ */
 
 @media (max-width:768px) {
+  body { margin: 0 8px; }
+
   /* 1.상단 팝업 */
   div#popup1 {
     display: flex;
@@ -9,39 +11,40 @@
   }
   div#popup1 div:nth-child(1) {
     font-size: 14px;
-    margin: 0 5vw;
+    margin: 0 1vw;
     min-width: 260px;
     line-height: 40px;
   }
   div#popup1 div:nth-child(2) {
     font-size: 11px; 
     line-height: 40px;
+    margin-right: 3vw;
   }
   div#popup1 div:nth-child(2) span {
-    font-size: 11px;
+    font-size: 14px;
     padding: 0 1px;
+  }
+  div#popup1 #span1 {
+    display: none;
   }
   /* 1.상단 팝업 */
 
   /* 2.상단 GNB */
   header {
     width: auto;
+    background-color: #ffffffc7;
+    height: 50px;
     display: flex;
-    /* justify-content:space-between; */
-    background-color: aquamarine;
-    align-items: flex-start;
-  }
-  div.logo {
-    margin-left: 1vw;
-    margin-top: 25px;
-  }
-  div.logo img {
-    width: 40px;
-    margin-left: 1vw;
+    justify-content: center;
   }
 
+  div.logo {
+    display: none;
+  }
   .top-menu {
-    margin-left: 1vw;
+    margin-top: 3vw;
+    margin-left: 0.1vw;
+    display: flex;
   }
   .top-menu>ul>li {
     margin: 0 1vw;
@@ -51,46 +54,52 @@
   }
   div.top-menu>ul {
     display: flex;
+    justify-content: space-between;
+    /* background-color: bisque; */
+  }
+  .top-menu>ul>li>a {
+    margin-bottom: 1vw;
   }
 
   div.top-item {
     display: none;
   }
-
   div.icon {
-    margin: 15px 1vw;
-
     display: none;  
-  }
-  div.icon a:nth-child(1) {
-    margin-right: 2vw;
-  }
-  div.icon a:nth-child(2) {
-    margin-right: 2vw;
-  }
-  div.logo {
-    margin-left: 1vw;
   }
   /* 2.상단 GNB */
   
   /* 3.상단 슬라이더 */
   swiper-container {
+    height: 100px;
     width: auto;
+    margin: 0 2px;
   }
   /* 3.상단 슬라이더 */
 
   /* 4.상단 아이콘 */
   .bigicon {
     width: auto;
+  }
+  .bigicon img {
+    width: 40px;
+  }
+
+  .bigicon>div:nth-child(1) {
+    height: 60px;
+  }
+  .bigicon>div>ul>li {
+    margin-top: 20px;
+    padding: 0 0.1vw ;
+  }
+  .bigicon ul:nth-child(7) {
     display: none;
   }
   .bigicon div {
     display: flex;
     justify-content:space-around;
   }
-  .bigicon>div>ul>li {
-    padding: 0 0.1vw ;
-  }
+
   .bigicon>div:nth-child(2) {
     display: flex;
     justify-content:space-around;
@@ -98,7 +107,7 @@
   }
   .bigicon>div:nth-child(2) a {
     min-width: 30px;
-    font-size: 13px;
+    font-size: 8.5px;
   }
 
   .bigicon>div>a {
@@ -114,31 +123,87 @@
     margin: 0 0.1vw;
   }
   .bigicon>div>a:nth-child(4) {
-    margin-left: 0.1vw;
+    margin-left: 0.5vw;
   }
   .bigicon>div>a:nth-child(7) {
-    margin-right: 0.1vw;
+    display: none;
   }
   /* 4.상단 아이콘 */
 
   /* 5.상단 이미지 */
   #topmainimg {
-    display: none;
-    /* width: 0; */
+    width: auto;
+  }
+  .toptext {
+    /* width: 100%; */
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: start;
+    margin-top: 5px;
+    margin-left: 10px;
   }
 
-  #topimage div {
-    width: 248px;
-    height: 177px;
-    margin: 10px 4px;
+  .numtext {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.numtext li {
+    font-size: 14px;
+  }
+  div.numtext li a {
+    display: inline-block;
+    min-width: 50px;
+    padding: 1px 20px;
+    border-bottom: 2px solid #fff;
+  }
+
+  div.topline {
+    margin-bottom: 10px;
+  }
+
+  #topimage {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #topimage1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgflex {
+    display: flex;
   }
 
   #topimage ul ul span {
-    width: 248px;
-    display: inline-block;
-    font-size: 11px;
+    width: 160px;
+    font-size: 10px;
   }
 
+  #topimage div {
+    width: 161px;
+    height: 115px;
+    margin: 10px 4px;
+  }
+
+  #topimage ul ul {
+    margin-bottom: 5px;
+    margin-left: 5px;;
+    text-align: left;
+  }
+
+  #topimage div:nth-child(3) {
+    display: none;
+  }
+  #topimage span:nth-child(3) {
+    display: none;
+  }
   #topimage ul ul span:nth-child(2) {
     margin: 0 1vw;
   }
@@ -146,25 +211,40 @@
 
   /* 6.중단 이미지 */
   #downimage {
-    display: none;
-    /* width: 0; */
+    margin: 0 auto;
+    height: 460px;
   }
 
   #downimg22 {
-    /* width: 0; */
+    width: auto;
+  }
+  .downimage2 {
+    display: inline-block;
+    margin: 0 auto; 
+  }
+
+  .downimage2 ul li:nth-child(2) {
+    display: none;
   }
 
   .downimage2 ul {
-    width: 180px;
-    height: 200px;
-    padding: 15px;
-    margin: 0 5px;
+    width: 28vw;
+    height: 120px;
+    padding: 30px;
+    margin: 4px 4px;
+    border-radius: 10px;
+  }
+
+  .downimage2 ul img {
+    right: 15%;
+    bottom: 10px;
   }
 
   .downimage2 ul li:nth-child(1) {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 5px;
+    min-width: 20px;
   }
 
   .downimage2 ul li:nth-child(2) {
@@ -174,31 +254,52 @@
 
   /* 7.하단 아이콘 */
   #downicon {
-    display: none;
-    /* width: 0; */
-    background-color: aqua;
+    display: inline-block;
+    width: auto;
+    margin: 15px auto;
   }
+
   .downtext {
-    margin: 0 5px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 15px;
+    margin: 10px 10px;
+  }
+
+  .downicon22 {
+    display: flex;
+  }
+
+  .downicon22 img {
+    width: 60px;
   }
   /* 7.하단 아이콘 */
 
   /* 8.footer */
   #footer {
-    display: none;
-    /* width: 0; */
+    margin: 0.1px 0;
+    height: 350px;
+    font-size: 13px;
+    color: #999999;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 10px;
   }
   .footer1 {
-    /* width: 0; */
+    width: auto;
     justify-content: center;
-    margin-left: 5px;
+  }
+  .footer1 ul:nth-child(1) {
+    display: inline-block;
+  }
+  .footer1 ul:nth-child(2) {
+    display: flex;
+    flex-direction: column;
   }
 
   .footer2 {
-    /* width: 0; */
+    width: auto;
     margin-left: 5px;
   }
-
   .footer2 ul:nth-child(1) {
     flex-direction: column;
   }
@@ -218,9 +319,11 @@
     display: none;
   }
   .footer2 ul:nth-child(3) li {
-    margin: 5px 2px;
+    display: none;
   }
-
+  .footer2 ul:nth-child(4) li {
+    display: none;
+  }
   /* 8.footer */
 
 
