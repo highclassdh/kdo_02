@@ -83,7 +83,7 @@
   /* 2.상단 GNB */
   
   /* 3.상단 슬라이더 */
-  swiper-container {
+  swiper-container.first {
     height: 125px;
     width: auto;
     margin: 0 2px;
@@ -93,6 +93,7 @@
   /* 4.상단 아이콘 */
   .bigicon {
     width: auto;
+    display: none;
   }
   .bigicon img {
     width: 60px;
@@ -148,6 +149,12 @@
     display: none;
   }
   /* 4.상단 아이콘 */
+  /* 4-2.상단 아이콘2 */
+  swiper-container.second {
+    display: block;
+    margin-top: 10px;
+  }
+  /* 4-2.상단 아이콘2 */
 
   /* 5.상단 이미지 */
   #topmainimg {
@@ -160,7 +167,7 @@
     font-weight: bold;
     line-height: 15px;
     text-align: start;
-    margin-top: 5px;
+    margin-top: 0.1px;
     margin-left: 10px;
   }
 
