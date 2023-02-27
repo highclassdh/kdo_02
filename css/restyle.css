@@ -153,6 +153,7 @@
   swiper-container.second {
     display: block;
     margin-top: 10px;
+    width: auto;
   }
   /* 4-2.상단 아이콘2 */
 
