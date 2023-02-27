@@ -159,7 +159,7 @@
 
   /* 5.상단 이미지 */
   #topmainimg {
-    width: auto;
+    width: 100%;
   }
   .toptext {
     /* width: 100%; */
@@ -180,7 +180,7 @@
   div.numtext li {
     font-size: 14px;
   }
-  div.numtext li a {
+  div.numtext li {
     display: inline-block;
     min-width: 50px;
     padding: 1px 20px;

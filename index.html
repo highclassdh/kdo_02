@@ -136,14 +136,14 @@
 
   <!-- 5.상단 이미지 -->
   <div id="topmainimg">
-   <div class="toptext">평형대별 인테리어</div>
-   <div class="numtext">
-      <li><a class="num10 act">10평대</a></li>
-      <li><a class="num20">20평대</a></li>
-      <li><a class="num30">30평대</a></li>
-      <li><a class="num40">40평대</a></li>
-   </div>
-   <div class="topline"></div>
+    <div class="toptext">평형대별 인테리어</div>
+    <div class="numtext">
+       <li class="num10 act">10평대</li>
+       <li class="num20">20평대</li>
+       <li class="num30">30평대</li>
+       <li class="num40">40평대</li>
+    </div>
+    <div class="topline"></div>
 
    <div id="topimage">
     <ul class="topimage1">
@@ -299,103 +299,77 @@
 
 <script>
   // 1.이미지변경 이벤트
-  const $num10 = document.querySelector('.num10');
-  const $num20 = document.querySelector('.num20');
-  const $num30 = document.querySelector('.num30');
-  const $num40 = document.querySelector('.num40');
-  const $mouse = document.querySelector('.li02');
+  const $numtext = document.querySelector('.numtext');
 
-  function remove10() {
-    $num10.classList.remove('act');
-  }
-  function remove20() {
-    $num20.classList.remove('act');
-  }
-  function remove30() {
-    $num30.classList.remove('act');
-  }
-  function remove40() {
-    $num40.classList.remove('act');
+  function select(divel, liel) {
+    Array.from(divel.children).forEach(
+      v => v.classList.remove('act')
+    )
+    if(liel) {
+      liel.classList.add('act');
+    }
   }
 
-  $num20.addEventListener('click', (ev) => {
+  $numtext.addEventListener('click', (ev) => {
     const seting = ev.target;
-    document.querySelector('#img01').src = "./img/img1/img7.jpg";
-    document.querySelector('#img02').src = "./img/img1/img8.jpg";
-    document.querySelector('#img03').src = "./img/img1/img1.jpg";
-    document.querySelector('#img04').src = "./img/img1/img2.jpg";
-    document.querySelector('#img05').src = "./img/img1/img3.jpg";
-    document.querySelector('#img06').src = "./img/img1/img4.jpg";
-    document.querySelector('#toptext01').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
-    document.querySelector('#toptext02').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
-    document.querySelector('#toptext03').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
-    document.querySelector('#toptext04').innerText = "저렴하고 완벽한 인테리어";
-    document.querySelector('#toptext05').innerText = "북유럽 감성이 녹아있는 편안한 공간";
-    document.querySelector('#toptext06').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
-    $num20.classList.add('act');
-    remove10();
-    remove30();
-    remove40();
-  })
 
-  $num30.addEventListener('click', (ev) => {
-    const seting = ev.target;
-    document.querySelector('#img01').src = "./img/img1/img5.jpg";
-    document.querySelector('#img02').src = "./img/img1/img6.jpg";
-    document.querySelector('#img03').src = "./img/img1/img7.jpg";
-    document.querySelector('#img04').src = "./img/img1/img8.jpg";
-    document.querySelector('#img05').src = "./img/img1/img1.jpg";
-    document.querySelector('#img06').src = "./img/img1/img2.jpg";
-    document.querySelector('#toptext01').innerText = "북유럽 감성이 녹아있는 편안한 공간";
-    document.querySelector('#toptext02').innerText = "저렴하고 완벽한 인테리어";
-    document.querySelector('#toptext03').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
-    document.querySelector('#toptext04').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
-    document.querySelector('#toptext05').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
-    document.querySelector('#toptext06').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
-    $num30.classList.add('act');
-    remove10();
-    remove20();
-    remove40();
-  })
-
-  $num40.addEventListener('click', (ev) => {
-    const seting = ev.target;
-    document.querySelector('#img01').src = "./img/img1/img3.jpg";
-    document.querySelector('#img02').src = "./img/img1/img4.jpg";
-    document.querySelector('#img03').src = "./img/img1/img5.jpg";
-    document.querySelector('#img04').src = "./img/img1/img6.jpg";
-    document.querySelector('#img05').src = "./img/img1/img7.jpg";
-    document.querySelector('#img06').src = "./img/img1/img8.jpg";
-    document.querySelector('#toptext01').innerText = "저렴하고 완벽한 인테리어";
-    document.querySelector('#toptext02').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
-    document.querySelector('#toptext03').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
-    document.querySelector('#toptext04').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
-    document.querySelector('#toptext05').innerText = "북유럽 감성이 녹아있는 편안한 공간";
-    document.querySelector('#toptext06').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
-    $num40.classList.add('act');
-    remove10();
-    remove20();
-    remove30();
-  })
-
-  $num10.addEventListener('click', (ev) => {
-    const seting = ev.target;
-    document.querySelector('#img01').src = "./img/img1/img1.jpg";
-    document.querySelector('#img02').src = "./img/img1/img2.jpg";
-    document.querySelector('#img03').src = "./img/img1/img3.jpg";
-    document.querySelector('#img04').src = "./img/img1/img4.jpg";
-    document.querySelector('#img05').src = "./img/img1/img5.jpg";
-    document.querySelector('#img06').src = "./img/img1/img6.jpg";
-    document.querySelector('#toptext01').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
-    document.querySelector('#toptext02').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
-    document.querySelector('#toptext03').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
-    document.querySelector('#toptext04').innerText = "북유럽 감성이 녹아있는 편안한 공간";
-    document.querySelector('#toptext05').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
-    document.querySelector('#toptext06').innerText = "저렴하고 완벽한 인테리어";
-    $num10.classList.add('act');
-    remove20();
-    remove30();
-    remove40();
+    if(seting.classList == 'num20') {
+      document.querySelector('#img01').src = "./img/img1/img7.jpg";
+      document.querySelector('#img02').src = "./img/img1/img8.jpg";
+      document.querySelector('#img03').src = "./img/img1/img1.jpg";
+      document.querySelector('#img04').src = "./img/img1/img2.jpg";
+      document.querySelector('#img05').src = "./img/img1/img3.jpg";
+      document.querySelector('#img06').src = "./img/img1/img4.jpg";
+      document.querySelector('#toptext01').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
+      document.querySelector('#toptext02').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
+      document.querySelector('#toptext03').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
+      document.querySelector('#toptext04').innerText = "저렴하고 완벽한 인테리어";
+      document.querySelector('#toptext05').innerText = "북유럽 감성이 녹아있는 편안한 공간";
+      document.querySelector('#toptext06').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
+    }
+    else if(seting.classList == 'num30') {
+      document.querySelector('#img01').src = "./img/img1/img5.jpg";
+      document.querySelector('#img02').src = "./img/img1/img6.jpg";
+      document.querySelector('#img03').src = "./img/img1/img7.jpg";
+      document.querySelector('#img04').src = "./img/img1/img8.jpg";
+      document.querySelector('#img05').src = "./img/img1/img1.jpg";
+      document.querySelector('#img06').src = "./img/img1/img2.jpg";
+      document.querySelector('#toptext01').innerText = "북유럽 감성이 녹아있는 편안한 공간";
+      document.querySelector('#toptext02').innerText = "저렴하고 완벽한 인테리어";
+      document.querySelector('#toptext03').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
+      document.querySelector('#toptext04').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
+      document.querySelector('#toptext05').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
+      document.querySelector('#toptext06').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
+    }
+    else if(seting.classList == 'num40') {
+      document.querySelector('#img01').src = "./img/img1/img3.jpg";
+      document.querySelector('#img02').src = "./img/img1/img4.jpg";
+      document.querySelector('#img03').src = "./img/img1/img5.jpg";
+      document.querySelector('#img04').src = "./img/img1/img6.jpg";
+      document.querySelector('#img05').src = "./img/img1/img7.jpg";
+      document.querySelector('#img06').src = "./img/img1/img8.jpg";
+      document.querySelector('#toptext01').innerText = "저렴하고 완벽한 인테리어";
+      document.querySelector('#toptext02').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
+      document.querySelector('#toptext03').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
+      document.querySelector('#toptext04').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
+      document.querySelector('#toptext05').innerText = "북유럽 감성이 녹아있는 편안한 공간";
+      document.querySelector('#toptext06').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
+    }
+    else if(seting.classList == 'num10') {
+      document.querySelector('#img01').src = "./img/img1/img1.jpg";
+      document.querySelector('#img02').src = "./img/img1/img2.jpg";
+      document.querySelector('#img03').src = "./img/img1/img3.jpg";
+      document.querySelector('#img04').src = "./img/img1/img4.jpg";
+      document.querySelector('#img05').src = "./img/img1/img5.jpg";
+      document.querySelector('#img06').src = "./img/img1/img6.jpg";
+      document.querySelector('#toptext01').innerText = "신혼집으로 많이 찾으시는 20평대 아파트 인테리어";
+      document.querySelector('#toptext02').innerText = "구조 변경하여 거실을 넓게 활용한 실용성 뛰어난 빌라";
+      document.querySelector('#toptext03').innerText = "화이트&우드톤으로 꾸민 24평 신혼집 인테리어";
+      document.querySelector('#toptext04').innerText = "북유럽 감성이 녹아있는 편안한 공간";
+      document.querySelector('#toptext05').innerText = "작은 공간을 넓게 쓰자! 실평수 19평";
+      document.querySelector('#toptext06').innerText = "저렴하고 완벽한 인테리어";
+    }
+    select($numtext, seting);
   })
   // 1.이미지변경 이벤트
 
