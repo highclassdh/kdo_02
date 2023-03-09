@@ -34,7 +34,7 @@ div#popup1 div:nth-child(2) {
 }
 
 div#popup1 div:nth-child(2) span {
-  font-size: 17px;
+  font-size: 14px;
   padding: 0 2px;
 }
 /* 1.상단 팝업  */
@@ -576,6 +576,102 @@ div.topline {
   display: none;
 }
 /* 9.side */
+
+/* 10.side2 */
+#side2 {
+  position: fixed;
+  right: 0;
+  top: 220px;
+  width: 100px;
+  background-color: #fff;
+}
+
+#side2>ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border: 0.5px solid #e0e0e0;
+}
+
+#side2>ul>span {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+#side2>ul>a>span {
+  font-size: 12px;
+}
+
+.imgparent img {
+  width: 80px;
+  height: 70px;
+}
+
+.imgparent:hover .imgchild {
+  display: inline-block;
+}
+
+.imgparent {
+  position: relative;
+  width: 80px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.imgchild {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  display: none;
+  width: 380px;
+  height: 70px;
+  border: 1px solid #333;
+  background-color: #ffffffa4;
+}
+.imgchild div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+  z-index: 22;
+}
+.imgchild button {
+  width: 25px;
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 100px;
+}
+.imgchild div span:nth-child(2) {
+  font-size: 13px;
+}
+
+
+.imgparent2 img {
+  width: 80px;
+  height: 70px;
+}
+
+.imgparent2:hover .imgchild {
+  display: inline-block;
+}
+
+.imgparent2 {
+  position: relative;
+  width: 80px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1400px) {
+  #side2 {
+    display: none;
+  }
+}
+/* 10.side2 */
+
+
 
 
 /* ------------------------------ subpage ------------------------------------ */

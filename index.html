@@ -294,7 +294,46 @@
   <div id="side1"><a href=""><img src="img/footer/1313 1.png" alt=""></a></div>
   <!-- 9.side -->
 
-
+  <!-- 10.side2 -->
+  <div id="side2">
+    <ul>
+      <a href="subpage1.html"><img src="img/3.slide/111.png"></a>
+      <a href="subpage1.html"><span>왜 인플인가요?</span></a>
+    </ul>
+    <ul>
+      <a href="subpage1.html"><img src="img/3.slide/222.png"></a>
+      <a href="subpage1.html"><span>견적계산기</span></a>
+    </ul>
+    <ul>
+      <span>최근 본 공간</span>
+        <div class="imgparent">
+          <img src="img/3.slide/img1.jpg">
+          <div class="imgchild">
+            <a href="subpage1.html">
+              <div>
+                <span>신혼집으로 많이 찾으시는 20평대...</span>
+                <span>아파트ㅣ25평ㅣ3천만원대</span>
+              </div>
+            </a>
+            <button id="xbutton1">X</button>
+          </div>
+        </div>
+        <div class="imgparent2">
+          <img src="img/3.slide/img3.jpg">
+          <div class="imgchild">
+            <a href="subpage1.html">
+              <div>
+                <span>화이트&우드톤으로 꾸민 24평 신...</span>
+                <span>아파트ㅣ27평ㅣ2천만원대</span>
+              </div>
+            </a>
+            <button id="xbutton2">X</button>
+          </div>
+        </div>
+        <div class="imgparent"></div>
+    </ul>
+  </div>
+  <!-- 10.side2 -->
 
 
 <script>
@@ -439,6 +478,19 @@
   })
   // 5.side 스크롤 이벤트
 
+  // 6.side2 스크롤 이벤트
+  const $xbutton1 = document.querySelector('#xbutton1');
+  const $xbutton2 = document.querySelector('#xbutton2');
+  const $imgparent = document.querySelector('.imgparent');
+  const $imgparent2 = document.querySelector('.imgparent2');
+
+  $xbutton1.addEventListener('click', () => {
+    $imgparent.style.display = "none";
+  })
+  $xbutton2.addEventListener('click', () => {
+    $imgparent2.style.display = "none";
+  })
+  // 6.side2 스크롤 이벤트
 
 
 </script>
