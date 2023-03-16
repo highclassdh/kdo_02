@@ -510,4 +510,54 @@
 /* ------------------------------ subpage ------------------------------------ */
 
 
+/* ------------------------------ joinpage ------------------------------------ */
+  
+#article {
+  padding: 10px 0;
+  background-color: #F5F5F5;
+}
+
+#article h1 {
+  font-size: 23px;
+}
+
+#top li {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+#top li span {
+  margin-bottom: 10px;
+}
+
+#join {
+  width: 320px;
+  padding: 10px;
+}
+
+#top li input {
+  height: 50px;
+  width: 300px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+#top li div {
+  top: 90px;
+  left: 20px;
+}
+
+#checklist1 {
+  padding: 5px;
+  font-size: 11px;
+}
+
+#checklist1 ul:nth-child(4) {
+  display: none;
+}
+
+/* ------------------------------ joinpage ------------------------------------ */
+
+
 }

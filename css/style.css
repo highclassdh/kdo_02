@@ -959,9 +959,12 @@ div.topline {
 /* ------------------------------ joinpage ------------------------------------ */
 
 #article {
+  width: 100%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 0;
+  background-color: #F5F5F5;
 }
+
 
 #article h1 {
   margin: 0px auto;
@@ -1083,7 +1086,6 @@ div.topline {
   display: none;
 }
 
-
 #checklist1 {
   padding: 10px;
   font-size: 13px;
@@ -1114,9 +1116,7 @@ div.topline {
   font-weight: bold;
 }
 
-#article {
-  background-color: #F5F5F5;
-}
+
 
 
 
