@@ -275,7 +275,16 @@
   </div>
   <!-- 10.side2 -->
 
-
+  <!-- 11.downbar -->
+  <div id="downbar11">
+    <div id="downbar">
+      <div class="barimg1 act"><br/>홈</div>
+      <div class="barimg2"><br/>견적계산기</div>
+      <div class="barimg3"><br/>나의견적</div>
+      <div class="barimg4"><br/>전체메뉴</div>
+    </div>
+  </div>
+  <!-- 11.downbar -->
 
 
 
@@ -335,7 +344,46 @@
   })
   // 6.side2 스크롤 이벤트
 
+  // 7.downbar click 이벤트
+  const $downbar = document.querySelector('#downbar');
+  const $barimg1 = document.querySelector('.barimg1');
+  const $barimg2 = document.querySelector('.barimg2');
+  const $barimg3 = document.querySelector('.barimg3');
+  const $barimg4 = document.querySelector('.barimg4');
 
+  function selecting (div, ul) {
+    Array.from(div.children).forEach(
+      v => {
+       v.style.color = '#999999';
+       v.classList.remove('act');
+      }
+    )
+    if (ul) {
+      ul.style.color = '#3085ED';
+      ul.classList.add('act');
+    }
+  }
+  
+  $downbar.addEventListener('click', (e) => {
+    const selfclick = e.target;
+
+    selecting ($downbar, selfclick);
+  })
+
+
+
+
+   $barimg1.addEventListener('click', () => {
+    function newPage1() {location.href = 'index.html';}
+    newPage1(); 
+   })
+  //  $barimg2.addEventListener('click', () => {
+  //   function newPage1() {location.href = 'subpage1.html';}
+  //   newPage1(); 
+  //  })
+
+   
+  // 7.downbar click 이벤트
 
 
 // -----------------------------joinpage--------------------------------

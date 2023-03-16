@@ -711,11 +711,12 @@ div.topline {
 /* 11.downbar */
 #downbar11 {
   display: none;
+  /* width: 100%; */
 }
 
 #downbar {
   height: 60px;
-  width: 100%;
+  width: 96%;
   background-color: #fff;
   display: flex;
   justify-content: space-around;
