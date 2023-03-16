@@ -362,6 +362,19 @@
   }
   /* 8.footer */
 
+  /* 9.side */
+  #side1 img {
+    width: 40px;
+  }
+  /* 9.side */
+
+  /* 10.downbar */
+  #downbar11 {
+    display: inline-block;
+  }
+  /* 10.downbar */
+
+
 
   /* ------------------------------ subpage ------------------------------------ */
 

@@ -606,8 +606,11 @@ div.topline {
 #side1 {
   position: fixed;
   right: 15px;
-  bottom: 15px;
+  bottom: 75px;
   display: none;
+}
+#side1 img {
+  width: 60px;
 }
 /* 9.side */
 
@@ -704,6 +707,66 @@ div.topline {
   }
 }
 /* 10.side2 */
+
+/* 11.downbar */
+#downbar11 {
+  display: none;
+}
+
+#downbar {
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 1px -1px 3px #9c9c9c;
+  position: fixed;
+  bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#downbar div {
+  width: 66px;
+  height: 26px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 25px;
+  margin-top: 10px;;
+  color: #999999;
+
+} 
+
+#downbar div:nth-child(1) {
+  color: #3085ED;
+}
+
+.barimg1 {
+  background: url('../img/downbar/111.png') no-repeat 20px 0px / contain;
+}
+.barimg1.act {
+  background: url('../img/downbar/112.png') no-repeat 20px 0px / contain;
+}
+.barimg2 {
+  background: url('../img/downbar/222.png') no-repeat 20px 0px / contain;
+}
+.barimg2.act {
+  background: url('../img/downbar/223.png') no-repeat 20px 0px / contain;
+}
+.barimg3 {
+  background: url('../img/downbar/333.png') no-repeat 20px 0px / contain;
+}
+.barimg3.act {
+  background: url('../img/downbar/334.png') no-repeat 20px 0px / contain;
+}
+.barimg4 {
+  background: url('../img/downbar/444.png') no-repeat 20px 0px / contain;
+}
+.barimg4.act {
+  background: url('../img/downbar/445.png') no-repeat 20px 0px / contain;
+}
+
+/* 11.downbar */
 
 
 
