@@ -325,7 +325,7 @@
   <!-- 8.footer -->
 
   <!-- 9.side -->
-  <div id="side1"><a href=""><img src="img/footer/1313 1.png" alt=""></a></div>
+  <div id="side1"><img src="img/footer/1313 1.png" alt=""></div>
   <!-- 9.side -->
 
   <!-- 10.side2 -->
@@ -379,6 +379,90 @@
     </div>
   </div>
   <!-- 11.downbar -->
+
+  <!-- 12.menubar -->
+  <div class="menubarblack">
+    <div id="menubar">
+      <div id="menubar1">
+        <div><img id="menubarimg" src="img/menubar/55.png" /></div>
+        <div><a href="joinpage1.html"><span>로그인</span> 해주세요 ></a></div>
+        <div>
+          <li>
+            <a href="">
+              <img src="img/menubar/1.png" />
+              <span>견적신청</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/menubar/2.png" />
+              <span>최근본공간</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/menubar/3.png" />
+              <span>자주묻는질문</span>
+            </a>
+          </li>
+        </div>
+      </div>
+      <div id="menubar2">
+        <div>
+          <ul>
+            <li>
+              <a href="">
+                <img src="img/menubar/111.png" />
+                <span>주거공간</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/menubar/112.png" />
+                <span>상업공간</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/menubar/113.png" />
+                <span>공간아이디어</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="">
+                <img src="img/menubar/114.png" />
+                <span>시공전문가</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/menubar/115.png" />
+                <span>고객후기</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/menubar/116.png" />
+                <span>전문가입점</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menubarline"></div>
+      <div id="menubar3">
+        <a href=""><div>고객센터</div></a>
+        <a href=""><div>회사소개</div></a>
+        <a href=""><div>시공전문가 입점하기</div></a>
+        <a href=""><div>앱 다운로드</div></a>
+        <a href=""><div>공지사항</div></a>
+        <a href="joinpage1.html"><div>로그인</div></a>
+      </div>
+    </div>
+  </div>
+  <!-- 12.menubar -->
 
 
 <script>
@@ -570,7 +654,7 @@
     function newPage1() {location.href = 'index.html';}
     newPage1(); 
    })
-   $barimg4.addEventListener('click', () => {
+   $barimg3.addEventListener('click', () => {
     function newPage1() {location.href = 'joinpage1.html';}
     newPage1(); 
    })
@@ -581,6 +665,41 @@
 
    
   // 7.downbar click 이벤트
+
+  // 8.menubar click 이벤트
+  const $menubarblack = document.querySelector('.menubarblack')
+  const $menubarimg = document.querySelector('#menubarimg')
+  const $body = document.querySelector('body');
+
+  function topmove() {
+      window.scrollTo(0, 0);
+    };
+  function scrollstop() {
+    document.body.classList.add("stopscroll"); 
+  }
+  function scrollgo() {
+    document.body.classList.remove("stopscroll"); 
+  }
+
+  $barimg4.addEventListener('click', () => {
+    topmove();
+    scrollstop();
+    $menubarblack.classList.add('att');
+   })
+  $menubarimg.addEventListener('click', () => {
+    scrollgo();
+    $menubarblack.classList.remove('att');
+   })
+  
+  
+  // 8.menubar click 이벤트
+
+
+
+
+
+
+
 
 
 </script>

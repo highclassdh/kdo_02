@@ -4,7 +4,6 @@
 a {text-decoration:none; color:#333; font-family: 'Noto Sans KR', sans-serif;}
 ul,ol,li {list-style: none;}
 body {font-size: 16px; color:#333; font-family: 'Noto Sans KR', sans-serif;}
-html {overflow:hidden; overflow-y:scroll;}
 
 /* 1.상단 팝업  */
 div#popup1 {
@@ -766,8 +765,107 @@ div.topline {
 .barimg4.act {
   background: url('../img/downbar/445.png') no-repeat 20px 0px / contain;
 }
-
 /* 11.downbar */
+
+/* 12.menubar */
+.menubarblack {
+  height: 100%;
+  width: 100%;
+  background-color: #333333d3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+
+#menubar {
+  width: 300px;
+  height: 100%;
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y:scroll;
+  animation-name: obj11;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: both;
+}
+@keyframes obj11{
+  0%{ opacity: 0; transform: translateX(-200px) scale(1);}
+  100%{opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+#menubar1 {
+  background-color: #4983EB;
+  padding: 20px;
+}
+#menubar1 div a {
+  color: #fff;
+}
+#menubar1 div:nth-child(2) a {
+  font-size: 18px;;
+}
+#menubar1 div:nth-child(2) a span {
+  font-weight: bold;
+}
+#menubar1 div:nth-child(2) {
+  margin: 15px 10px;
+}
+#menubar1 div:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+#menubar1 div:nth-child(3) img {
+  display: block;
+  margin: 0 auto;
+}
+#menubar1 div:nth-child(3) li a {
+  font-size: 12px;
+  text-align: center;
+}
+
+#menubar2 {
+  padding: 5px;
+}
+#menubar2 ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+#menubar2 ul li {
+  text-align: center;
+}
+#menubar2 img {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+#menubar2 span {
+  font-size: 13px;
+}
+.menubarline {
+  height: 5px;
+  background-color: #EEEEEE;
+}
+
+#menubar3 {
+  padding: 20px 30px;
+}
+#menubar3 div {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.stopscroll {
+  overflow:hidden;
+}
+
+
+/* 12.menubar */
 
 
 
