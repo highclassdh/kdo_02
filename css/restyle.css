@@ -391,7 +391,7 @@
 
 
 
-  /* ------------------------------ subpage ------------------------------------ */
+  /* ------------------------------ subpage1 ------------------------------------ */
 
   /* 3.상단 이미지 */
   #subtopimg {
@@ -522,7 +522,58 @@
   }
 /* 5.하단 이미지 */
 
-/* ------------------------------ subpage ------------------------------------ */
+/* ------------------------------ subpage1 ------------------------------------ */
+
+
+/* ------------------------------ subpage2 ------------------------------------ */
+#customer {
+  width: 100%;
+  margin: 10px auto;
+}
+#customer1 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.cusflex {
+  justify-content: space-around;
+  margin-bottom: 60px;
+  /* position: relative; */
+}
+.cusflex ul li:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+  width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cusflex ul li:nth-child(2) {
+  font-size: 14px;
+  width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cusflex >li img {
+  height: 110px;
+  width: 110px;
+}
+
+.cusflex ul li:nth-child(4) {
+  position: absolute;
+}
+.cusflex ul li:nth-child(4) img {
+  width: 100px;
+}
+.cusflex ul li:nth-child(4) span {
+  font-size: 14px;
+}
+
+
+
+/* ------------------------------ subpage2 ------------------------------------ */
 
 
 /* ------------------------------ joinpage ------------------------------------ */

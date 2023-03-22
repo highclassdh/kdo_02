@@ -713,7 +713,7 @@ div.topline {
   /* width: 100%; */
 }
 
-#downbar {
+.downbar {
   height: 60px;
   width: 96%;
   background-color: #fff;
@@ -726,7 +726,7 @@ div.topline {
   border-top-right-radius: 10px;
 }
 
-#downbar div {
+.downbar div {
   width: 66px;
   height: 26px;
   text-align: center;
@@ -737,32 +737,49 @@ div.topline {
 
 } 
 
-#downbar div:nth-child(1) {
+/* .downbar div:nth-child(1) {
   color: #3085ED;
+} */
+/* .barimg2 {
+  color: red;
+  background-color: #3085ED;
+  font-size: 30px;
+} */
+.barfont1 {
+  color: #3085ED;
+}
+.barfont2 {
+  color: #3085ED;
+}
+.barfont3 {
+  color: #3085ED;
+}
+.barfont4 {
+  color: #999999;
 }
 
 .barimg1 {
   background: url('../img/downbar/111.png') no-repeat 20px 0px / contain;
 }
-.barimg1.act {
+.barimg1.actt {
   background: url('../img/downbar/112.png') no-repeat 20px 0px / contain;
 }
 .barimg2 {
   background: url('../img/downbar/222.png') no-repeat 20px 0px / contain;
 }
-.barimg2.act {
+.barimg2.actt {
   background: url('../img/downbar/223.png') no-repeat 20px 0px / contain;
 }
 .barimg3 {
   background: url('../img/downbar/333.png') no-repeat 20px 0px / contain;
 }
-.barimg3.act {
+.barimg3.actt {
   background: url('../img/downbar/334.png') no-repeat 20px 0px / contain;
 }
 .barimg4 {
   background: url('../img/downbar/444.png') no-repeat 20px 0px / contain;
 }
-.barimg4.act {
+.barimg4.actt {
   background: url('../img/downbar/445.png') no-repeat 20px 0px / contain;
 }
 /* 11.downbar */
@@ -857,7 +874,7 @@ div.topline {
 }
 #menubar3 div {
   font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .stopscroll {
@@ -870,7 +887,7 @@ div.topline {
 
 
 
-/* ------------------------------ subpage ------------------------------------ */
+/* ------------------------------ subpage1 ------------------------------------ */
 
 /* 3.상단 이미지 */
 #subtopimg {
@@ -1051,7 +1068,91 @@ div.topline {
 
 /* 5.하단 이미지 */
 
-/* ------------------------------ subpage ------------------------------------ */
+/* ------------------------------ subpage1 ------------------------------------ */
+
+
+/* ------------------------------ subpage2 ------------------------------------ */
+
+#customer {
+  width: 1100px;
+  margin: 40px auto;
+}
+
+#customer1 {
+  font-size: 19px;
+  margin-bottom: 40px;
+}
+#customer1 span {
+  font-weight: bold;
+}
+
+#customer2 {
+  margin: 20px 0;
+}
+#customline {
+  border-top: 1px solid #dfdfdf;
+}
+.custom {
+  margin: 20px 0;
+}
+.cusflex {
+  display: flex;
+  justify-content: space-between;
+}
+.cusflex ul li:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+.cusflex ul li:nth-child(2) {
+  font-size: 14px;
+  color: #969696;
+  margin: 10px 0;
+}
+.cusflex ul li:nth-child(3) span {
+  background-color: #ececec;
+  color: #969696;
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-size: 14px;
+}
+.cusflex ul li:nth-child(4) {
+  margin: 20px 0;
+  display: flex;
+}
+.cusflex ul li:nth-child(4) img {
+  width: 130px;
+}
+.cusflex ul li:nth-child(4) span {
+  margin-left: 10px;
+}
+.cusflex >li img {
+  height: 170px;
+  width: 230px;
+  border-radius: 7px;
+}
+
+#customer22 {
+  display: none;
+}
+
+#customer3 {
+  margin-bottom: 30px;
+}
+
+#custombutton {
+  border: 1px solid #969696;
+  width: 250px;
+  padding: 10px 0;
+  margin : 0 auto;
+  text-align: center;
+}
+
+#custombutton:hover {
+  background-color: #7cafdf;
+  color: #fff;
+}
+
+/* ------------------------------ subpage2 ------------------------------------ */
 
 
 /* ------------------------------ joinpage ------------------------------------ */

@@ -277,10 +277,10 @@
 
   <!-- 11.downbar -->
   <div id="downbar11">
-    <div id="downbar">
-      <div class="barimg1 act"><br/>홈</div>
-      <div class="barimg2"><br/>견적계산기</div>
-      <div class="barimg3"><br/>나의견적</div>
+    <div class="downbar">
+      <div class="barimg1"><br/>홈</div>
+      <div class="barimg2"><br/>고객후기</div>
+      <div class="barimg3 actt"><br/><span class="barfont3">나의견적</span></div>
       <div class="barimg4"><br/>전체메뉴</div>
     </div>
   </div>
@@ -294,19 +294,19 @@
         <div><a href="joinpage1.html"><span>로그인</span> 해주세요 ></a></div>
         <div>
           <li>
-            <a href="">
+            <a href="#">
               <img src="img/menubar/1.png" />
               <span>견적신청</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="img/menubar/2.png" />
               <span>최근본공간</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="img/menubar/3.png" />
               <span>자주묻는질문</span>
             </a>
@@ -317,19 +317,19 @@
         <div>
           <ul>
             <li>
-              <a href="">
+              <a href="#">
                 <img src="img/menubar/111.png" />
                 <span>주거공간</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <img src="img/menubar/112.png" />
                 <span>상업공간</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <img src="img/menubar/113.png" />
                 <span>공간아이디어</span>
               </a>
@@ -337,19 +337,19 @@
           </ul>
           <ul>
             <li>
-              <a href="">
+              <a href="#">
                 <img src="img/menubar/114.png" />
                 <span>시공전문가</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="subpage2.html">
                 <img src="img/menubar/115.png" />
                 <span>고객후기</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <img src="img/menubar/116.png" />
                 <span>전문가입점</span>
               </a>
@@ -359,11 +359,11 @@
       </div>
       <div class="menubarline"></div>
       <div id="menubar3">
-        <a href=""><div>고객센터</div></a>
-        <a href=""><div>회사소개</div></a>
-        <a href=""><div>시공전문가 입점하기</div></a>
-        <a href=""><div>앱 다운로드</div></a>
-        <a href=""><div>공지사항</div></a>
+        <a href="#"><div>고객센터</div></a>
+        <a href="#"><div>회사소개</div></a>
+        <a href="#"><div>시공전문가 입점하기</div></a>
+        <a href="#"><div>앱 다운로드</div></a>
+        <a href="#"><div>공지사항</div></a>
         <a href="joinpage1.html"><div>로그인</div></a>
       </div>
     </div>
@@ -427,48 +427,42 @@
   // 6.side2 스크롤 이벤트
 
   // 7.downbar click 이벤트
-  const $downbar = document.querySelector('#downbar');
+  const $downbar = document.querySelector('.downbar');
   const $barimg1 = document.querySelector('.barimg1');
   const $barimg2 = document.querySelector('.barimg2');
   const $barimg3 = document.querySelector('.barimg3');
   const $barimg4 = document.querySelector('.barimg4');
 
-  function selecting (div, ul) {
-    Array.from(div.children).forEach(
-      v => {
-       v.style.color = '#999999';
-       v.classList.remove('act');
-      }
-    )
-    if (ul) {
-      ul.style.color = '#3085ED';
-      ul.classList.add('act');
-    }
-  }
-  
-  $downbar.addEventListener('click', (e) => {
-    const selfclick = e.target;
+  // function selecting (div, ul) {
+  //   Array.from(div.children).forEach(
+  //     v => {
+  //      v.style.color = '#999999';
+  //      v.classList.remove('actt');
+  //     }
+  //   )
+  //   if (ul) {
+  //     ul.style.color = '#3085ED';
+  //     ul.classList.add('actt');
+  //   }
+  // }
+  // $downbar.addEventListener('click', (e) => {
+  //   const selfclick = e.target;
+  //   selecting ($downbar, selfclick);
+  // })
 
-    selecting ($downbar, selfclick);
+  $barimg1.addEventListener('click', () => {
+    location.href = 'index.html';
   })
-
-
-
-
-   $barimg1.addEventListener('click', () => {
-    function newPage1() {location.href = 'index.html';}
-    newPage1(); 
-   })
-  //  $barimg2.addEventListener('click', () => {
-  //   function newPage1() {location.href = 'subpage1.html';}
-  //   newPage1(); 
-  //  })
-
-   
+  $barimg2.addEventListener('click', () => {
+    location.href = 'subpage2.html';
+  })
+  $barimg3.addEventListener('click', () => {
+    location.href = 'joinpage1.html';
+  })
   // 7.downbar click 이벤트
 
     // 8.menubar click 이벤트
-    const $menubarblack = document.querySelector('.menubarblack')
+  const $menubarblack = document.querySelector('.menubarblack')
   const $menubarimg = document.querySelector('#menubarimg')
   const $body = document.querySelector('body');
 
