@@ -256,10 +256,10 @@
   <div id="downicon">
     <div class="downtext">SNS로 만나는 인플</div>
     <div class="downicon22">
-      <a href="subpage1.html"><img src="img/icon2/11.png"></a>
-      <a href="subpage1.html"><img src="img/icon2/12.png"></a>
-      <a href="subpage1.html"><img src="img/icon2/13.png"></a>
-      <a href="subpage1.html"><img src="img/icon2/14.png"></a>
+      <ul class="moveev1"><a href="subpage1.html"><img src="img/icon2/11.png"></a></ul>
+      <ul class="moveev2"><a href="subpage1.html"><img src="img/icon2/12.png"></a></ul>
+      <ul class="moveev3"><a href="subpage1.html"><img src="img/icon2/13.png"></a></ul>
+      <ul class="moveev4"><a href="subpage1.html"><img src="img/icon2/14.png"></a></ul>
     </div>
   </div>
   <!-- 7.하단 아이콘 -->
@@ -567,6 +567,34 @@
   })
   // 2.스크롤이벤트 _하단이미지
 
+  // 2-2.스크롤이벤트 _하단아아콘
+  const $moveev1 = document.querySelector('.moveev1');
+  const $moveev2 = document.querySelector('.moveev2');
+  const $moveev3 = document.querySelector('.moveev3');
+  const $moveev4 = document.querySelector('.moveev4');
+
+  window.addEventListener('scroll', function(){
+    const posY = this.window.pageYOffset;
+    const viewheight = this.window.innerHeight;
+    const imagemenu = this.document.querySelector('#footer').getBoundingClientRect().top;
+
+    if(posY > imagemenu - viewheight) {
+      $moveev1.classList.add('act111');
+      $moveev2.classList.add('act121');
+      $moveev3.classList.add('act131');
+      $moveev4.classList.add('act141');
+    }
+    else if(posY < imagemenu - viewheight) {
+      $moveev1.classList.remove('act111');
+      $moveev2.classList.remove('act121');
+      $moveev3.classList.remove('act131');
+      $moveev4.classList.remove('act141');
+    }
+  })
+
+
+  // 2-2.스크롤이벤트 _하단아아콘
+
   // 3.스크롤이벤트 _header
   const $header = document.querySelector('header');
   const header2 = document.querySelector('header').getBoundingClientRect().top;
@@ -680,6 +708,10 @@
     scrollgo();
     $menubarblack.classList.remove('att');
    })
+  $menubarblack.addEventListener('click', () => {
+    scrollgo();
+    $menubarblack.classList.remove('att');
+  })
   
   
   // 8.menubar click 이벤트

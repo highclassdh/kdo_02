@@ -259,7 +259,7 @@
   <div id="downbar11">
     <div class="downbar">
       <div class="barimg1 actt"><br/><span class="barfont1 actt">홈</span></div>
-      <div class="barimg2"><br/>견적계산기</div>
+      <div class="barimg2"><br/>고객후기</div>
       <div class="barimg3"><br/>나의견적</div>
       <div class="barimg4"><br/>전체메뉴</div>
     </div>
@@ -441,7 +441,7 @@
   })
   // 7.downbar click 이벤트
 
-    // 8.menubar click 이벤트
+  // 8.menubar click 이벤트
   const $menubarblack = document.querySelector('.menubarblack')
   const $menubarimg = document.querySelector('#menubarimg')
   const $body = document.querySelector('body');
@@ -465,6 +465,10 @@
     scrollgo();
     $menubarblack.classList.remove('att');
    })
+  $menubarblack.addEventListener('click', () => {
+    scrollgo();
+    $menubarblack.classList.remove('att');
+  })
   
   
   // 8.menubar click 이벤트

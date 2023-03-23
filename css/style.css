@@ -506,7 +506,7 @@ div.topline {
   margin: 50px auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .downtext {
@@ -514,10 +514,49 @@ div.topline {
   font-size: 35px;
   font-weight: bold;
   line-height: 100px;
+  margin-left: 50px;
 }
 
 .downicon22 a {
   margin: 0 5px;
+}
+
+.downicon22 ul {
+  display: inline-block;
+}
+
+.act111 {
+  animation-name: obj2;
+  animation-duration: 1s;
+  animation-delay: 1.0s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: both;
+}
+.act121 {
+  animation-name: obj2;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: both;
+}
+.act131 {
+  animation-name: obj2;
+  animation-duration: 1s;
+  animation-delay: 2.6s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: both;
+}
+.act141 {
+  animation-name: obj2;
+  animation-duration: 1s;
+  animation-delay: 3.4s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes obj2{
+  0%{ opacity: 0; transform: translateY(100px) scale(0.5);}
+  100%{opacity: 1; transform: translateX(80px) scale(1);}
 }
 /* 7.하단 아이콘 */
 
