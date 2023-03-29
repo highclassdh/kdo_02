@@ -92,6 +92,9 @@ div.logo img {
 .top-menu>ul>li a:hover {
   color: #f26c3a;
 }
+.top-menu>ul>li:hover > a {
+  color: #f26c3a;
+}
 
 .top-menu li {
   position: relative;
