@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <!-- 1.상단 팝업 -->
   <div id="popup1">
     <div><a href="#">인테리어 후기 쓰고, <span>신세계 상품권</span> 받으세요!</a></div>
@@ -609,9 +608,16 @@
   // 3.스크롤이벤트 _header
 
   // 4.상단팝업 삭제 이벤트 <jQuery>
-  $('#popupbut').click(function(){
-    $('#popup1').css('display', 'none');
-  });
+  // $('#popupbut').click(function(){
+  //   $('#popup1').css('display', 'none');
+  // });
+  const $popupbut = document.querySelector('#popupbut');   
+  const $popup1 = document.querySelector('#popup1');   
+  $popupbut.addEventListener('click', () => {
+    $popup1.style.display = "none";
+  })
+
+
   // 4.상단팝업 삭제 이벤트
 
   // 5.side 스크롤 이벤트
@@ -729,8 +735,8 @@
 
 
 
+<script src="https://kit.fontawesome.com/9eb59787a1.js" crossorigin="anonymous"></script>
 
 </body>
-<script src="https://kit.fontawesome.com/9eb59787a1.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </html>
