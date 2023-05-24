@@ -83,8 +83,13 @@
   /* 2.상단 GNB */
   
   /* 3.상단 슬라이더 */
-  swiper-container.first {
+  /* #slide_head {
     height: 20%;
+    width: 100%;
+    margin: 0 2px;
+  } */
+  swiper-container.first {
+    height: 100%;
     width: 100%;
     margin: 0 2px;
   }
