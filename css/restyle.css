@@ -146,20 +146,7 @@
   }
   /* 4.상단 아이콘 */
   /* 4-2.상단 아이콘2 */
-  swiper-container.second {
-    display: block;
-    margin-top: 10px;
-    width: auto;
-  }
 
-  swiper-container.second span {
-    font-size: 12px;
-  }
-
-  swiper-container.second img {
-    width: 75px;
-    height: 75px;
-  }
   /* 4-2.상단 아이콘2 */
 
   /* 5.상단 이미지 */

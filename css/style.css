@@ -245,26 +245,10 @@ div.icon>li {
   margin-left: 26px;
 }
 /* 4.상단 아이콘 */
+
 /* 4-2.상단 아이콘2 */
-swiper-container.second {
-  width: 100vw;
-  height: 105px;
-  display: none;
-}
-.second swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.second swiper-slide img {
-  display: block;
-  width: 85px;
-  height: 95px;
-  object-fit: cover;
-}
+
+
 /* 4-2.상단 아이콘2 */
 
 
