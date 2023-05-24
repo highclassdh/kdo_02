@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/restyle.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link href="./css/restyle.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/9eb59787a1.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   <title>interior</title>
@@ -28,7 +28,7 @@
     <div class="top-menu">
       <ul>
         <li>
-          <a href="#">시공사례</a>
+          <a href="#">시공사례1</a>
           <ul>
             <li><a href="subpage1.html">아파트</a></li>
             <li><a href="subpage1.html">주택</a></li>
@@ -89,6 +89,36 @@
     <swiper-slide><img src="img/2.slide/slide3.png"></swiper-slide>
     <swiper-slide><img src="img/2.slide/slide4.png"></swiper-slide>
   </swiper-container>
+
+  <style>
+    swiper-container.first {
+    width: 1100px;
+    height: 200px;
+    z-index: 1;
+    }
+    .first swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .first swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    @media (max-width:768px) {
+      swiper-container.first {
+        height: 125px;
+        width: auto;
+        margin: 0 2px;
+      }
+    }
+  </style>
   <!-- 3.상단 슬라이더 -->
 
   <!-- 4.상단 아이콘 -->
