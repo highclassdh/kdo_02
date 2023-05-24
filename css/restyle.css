@@ -84,15 +84,15 @@
   
   /* 3.상단 슬라이더 */
   swiper-container.first {
-    height: 125px;
-    width: auto;
+    height: 20%;
+    width: 100%;
     margin: 0 2px;
   }
   /* 3.상단 슬라이더 */
 
   /* 4.상단 아이콘 */
   .bigicon {
-    width: auto;
+    width: 100%;
     display: none;
   }
   .bigicon img {
@@ -153,13 +153,12 @@
   swiper-container.second {
     display: block;
     margin-top: 10px;
-    width: auto;
+    width: 100%;
+    height: 15%;
   }
-
   swiper-container.second span {
     font-size: 12px;
   }
-
   swiper-container.second img {
     width: 75px;
     height: 75px;
