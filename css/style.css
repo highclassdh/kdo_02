@@ -206,7 +206,7 @@ div.icon>li {
 /* 3.상단 슬라이더 */
 swiper-container.first {
   width: 1100px;
-  height: 200px;
+  height: 20%;
   z-index: 1;
 }
 
